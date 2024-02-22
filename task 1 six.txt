@@ -1,0 +1,27 @@
+// Get the first number from the user
+var num1 = prompt("Enter the first number:");
+
+// Convert the input to a floating-point number
+num1 = parseFloat(num1);
+
+// Check if the input is a valid number
+if (isNaN(num1)) {
+    alert("Invalid input. Please enter a valid number.");
+} else {
+    // Get the second number from the user
+    var num2 = prompt("Enter the second number:");
+
+    // Convert the input to a floating-point number
+    num2 = parseFloat(num2);
+
+    // Check if the second input is a valid number
+    if (isNaN(num2)) {
+        alert("Invalid input. Please enter a valid number.");
+    } else {
+        // Perform addition
+        var result = num1 + num2;
+
+        // Display the result
+        alert("Result: " + result);
+    }
+}
